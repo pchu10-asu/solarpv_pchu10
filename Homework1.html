@@ -1,0 +1,90 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("Search").click(function(){
+			$("table1").hide()
+				$("printMe").click(function(){
+					$("This is a search feature").print();
+			});
+		});
+	});
+	</script>
+	<script>
+	$(document).ready(function(){
+		$("Login").click(function(){
+			print("Student ID: " + $("student ID").text())
+			print("Student Name: " + $("Student Name").text())
+			print("Student DOB: " + $("Student DOB").text())
+			print("Student Age: " + $("Student Age").text())
+			)};
+	</script>
+	<title>Welcome Page</title>
+</head>
+<body bgcolor="khaki">
+
+	<br><br><br><br><br>
+	<center>
+		<font face="arial black" size="4">
+		Student Registration System<br>
+		IFT 458 SPRING 2018</font><br>
+		<br>
+		<hr size="4" color="blue"/>
+<br><br>
+		<table border="1" width="800" height="300">
+			<tr>
+				<th align="center" colspan="3"> Student Regisration Form </th>
+			</tr>
+			<tr height="150">
+				<td width="20%"><a href="search.html">Search</a></td>
+
+
+				<td width="60%">
+
+					<form>
+						<table id="table1">
+							<tr>
+								<td>Student Id</td><td><input type="text" value="required"/>*</td></tr>
+
+								<tr><td>Student Name</td><td><input type="text" value="required"/></td></tr>
+
+								<tr><td>Student DOB</td><td><input type="datetime" value="required"/></td></tr>
+
+								<tr><td>Student Age</td><td><input type="number" value="required"/></td></tr>
+
+
+								<tr><td colspan="2" align="center"><input style="font-face :'Comic Sans MS';font-size:larger;height: 30px; width:90px;background-color: yellow;color:red;" type="submit" value="Login"/></td>
+							</tr>
+						</table>
+					</form>
+					<form>
+						<table id="table2">
+							<tr><td>Program</td></tr>
+							<tr><td><input type="radio" name="program" value="IFT" checked> IFT</td></tr>
+							<tr><td><input type="radio" name="program" value="EGR"> EGR</td></tr>
+							<tr><td><input type="radio" name="program" value="SER"> SER</td></tr>
+							<tr><td><input type="radio" name="program" value="CSE"> CSE</td></tr>
+							<tr><td><input type="radio" name="program" value="GIT"> GIT</td></tr>
+					</form
+					<form>
+					Campus<br>
+						<input type="checkbox" name="campus" value="Poly">Poly
+						<input type="checkbox" name="campus" value="Main">Main
+						<input type="checkbox" name="campus" value="West">West
+						<input type="checkbox" name="campus" value="Downtown">Downtown
+					</form>
+				</td>
+				<td widht="20%" colspan="2"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="3"></td>
+			</tr>
+
+		</table>
+
+		<br><br><br>
+		<hr size="4" color="blue"/>
+	</center>
+</body>
+</html>
