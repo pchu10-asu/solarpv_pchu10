@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title>Registration</title>
+	</head>
+	<body>
+		<h1>Sign up here</h1>
+		<div class="regform">
+			<form name="registration" action="/dashboard/dashboard.html" method="post" enctype="multipart/form-data">
+			<label>Username:</label>
+            <input type = "text" name = "userID" value = "" required /><br>
+			<label for="Company">Company:</label>
+				<select id="company">
+					<option value="C1">Company 1</option>
+					<option value="C2">Company 2</option>
+					<option value="C3">Company 3</option>
+					<option value="C4">Company 4</option>
+				</select><br>
+			<label>First Name:</label>
+            <input type = "text" name = "firstname" value = "" required /><br>
+			<label>Middle Name:</label>
+            <input type = "text" name = "middlename" value = ""/><br>
+			<label>Last Name:</label>
+            <input type = "text" name = "lastname" value = "" required /><br>
+			<label>Job Title:</label>
+            <input type = "text" name = "jobtitle" value = "" /><br>
+			<label>Email Address:</label>
+            <input type = "text" name = "email" value = "" /><br>
+			<label>Office Phone:</label>
+            <input type = "text" name = "officephone" value = "" /><br>
+			<label>Cell Phone:</label>
+            <input type = "text" name = "cellphone" value = "" /><br>
+			<label for="Appellation">Appellation:</label>
+				<select id="appellation">
+					<option value="mr">Mr.</option>
+					<option value="mrs">Mrs.</option>
+					<option value="dr">Dr.</option>
+					<option value="ms">Ms.</option>
+				</select><br>
+			<input type="submit" value="Enter">
+			</form>
+		</div>
+	</body>
+</html>
